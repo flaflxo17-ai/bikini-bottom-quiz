@@ -1,0 +1,6 @@
+{
+  "name": "Escape From Bikini Bottom: The Zombie Secret",
+  "description": "Game petualangan horor edukasi 3D FPS bertema Bikini Bottom untuk siswa SMP kelas 7, 8, dan 9.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

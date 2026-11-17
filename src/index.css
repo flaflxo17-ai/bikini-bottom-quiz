@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050b16;
+    color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes eyelidOpen {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  40% {
+    opacity: 0.92;
+    transform: scaleY(0.75);
+  }
+  70% {
+    opacity: 0.6;
+    transform: scaleY(0.25);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
+@keyframes jumpscareShake {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  15% { transform: translate(-14px, 10px) scale(1.08); }
+  30% { transform: translate(16px, -12px) scale(1.12); }
+  45% { transform: translate(-12px, -8px) scale(1.15); }
+  60% { transform: translate(12px, 12px) scale(1.1); }
+  75% { transform: translate(-8px, 6px) scale(1.05); }
+}
+
+.animate-jumpscare {
+  animation: jumpscareShake 0.45s ease-in-out infinite;
+}
